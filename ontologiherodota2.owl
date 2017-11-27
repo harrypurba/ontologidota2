@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.rpp.org/ontologiherodota2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.rpp.org/ontologiherodota2">
+    <Prefix name="" IRI="http://www.rpp.org/ontologiherodota2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#WeakCarryHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrongCarryHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComplexity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complexity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligenceHero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeleeHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarryPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttackRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgilityHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ranged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RangedHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryWeakCarryHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Easy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EasyHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumCarryHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strength"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCarryPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryWeak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intelligence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSupportPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrengthHero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttackRange"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AgilityHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Agility"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HardHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Hard"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IntelligenceHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Intelligence"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumCarryHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarryPower"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeleeHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackRange"/>
+            <Class IRI="#Melee"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RangedHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackRange"/>
+            <Class IRI="#Ranged"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StrengthHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Strength"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StrongCarryHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarryPower"/>
+            <Class IRI="#Strong"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VeryWeakCarryHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarryPower"/>
+            <Class IRI="#VeryWeak"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeakCarryHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarryPower"/>
+            <Class IRI="#Weak"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Agility"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgilityHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackRange"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarryPower"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Complexity"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Easy"/>
+        <Class IRI="#Complexity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EasyHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hard"/>
+        <Class IRI="#Complexity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intelligence"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligenceHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#CarryPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Complexity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#SupportPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumCarryHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melee"/>
+        <Class IRI="#AttackRange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeleeHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ranged"/>
+        <Class IRI="#AttackRange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RangedHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strength"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrengthHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strong"/>
+        <Class IRI="#CarryPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strong"/>
+        <Class IRI="#SupportPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrongCarryHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportPower"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryWeak"/>
+        <Class IRI="#CarryPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryWeak"/>
+        <Class IRI="#SupportPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryWeakCarryHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weak"/>
+        <Class IRI="#CarryPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weak"/>
+        <Class IRI="#SupportPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeakCarryHero"/>
+        <Class IRI="#Hero"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Agility"/>
+        <Class IRI="#Intelligence"/>
+        <Class IRI="#Strength"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AgilityHero"/>
+        <Class IRI="#IntelligenceHero"/>
+        <Class IRI="#StrengthHero"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AttackRange"/>
+        <Class IRI="#CarryPower"/>
+        <Class IRI="#Complexity"/>
+        <Class IRI="#SupportPower"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Easy"/>
+        <Class IRI="#Hard"/>
+        <Class IRI="#Medium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EasyHero"/>
+        <Class IRI="#HardHero"/>
+        <Class IRI="#MediumHero"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Strong"/>
+        <Class IRI="#VeryWeak"/>
+        <Class IRI="#Weak"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MediumCarryHero"/>
+        <Class IRI="#StrongCarryHero"/>
+        <Class IRI="#VeryWeakCarryHero"/>
+        <Class IRI="#WeakCarryHero"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Melee"/>
+        <Class IRI="#Ranged"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MeleeHero"/>
+        <Class IRI="#RangedHero"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAttackRange"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCarryPower"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComplexity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSupportPower"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
