@@ -10,14 +10,14 @@ rdfs:		http://www.w3.org/2000/01/rdf-schema#
 [MappingDeclaration] @collection [[
 mappingId	Hero Beratribut Strength
 target		:hero{id} a :StrengthHero . 
-source		select id,nama from herolist where atribut = 'strength'
+source		select id,name from herolist where attribute = 'strength'
 
 mappingId	Hero Carry yang Kuat
 target		:hero{id} a :StrongCarryHero . 
-source		select id,nama from herolist where carrypower = 'strong'
+source		select id,name from herolist where carrypower = 'strong'
 
 mappingId	Hero yang Mudah digunakan dan Carry yang Kuat
 target		:hero{id} a :EasyStrongCarry . 
-source		select id,nama from herolist where complexity = 'easy' and carrypower ='strong'
+source		select id,name from herolist where complexity = 'easy' and carrypower ='strong'
 ]]
 

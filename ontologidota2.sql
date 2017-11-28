@@ -1,7 +1,7 @@
 create table herolist (
 	id INT,
-	nama TEXT,
-	atribut TEXT,
+	name TEXT,
+	attribute TEXT,
 	attackrange TEXT,
 	complexity TEXT,
 	carrypower TEXT,
@@ -101,7 +101,7 @@ INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,suppor
 INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('91','lich','intelligence','ranged','easy','very weak','strong');
 INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('92','lina','intelligence','ranged','easy','strong','very weak');
 INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('93','lion','intelligence','ranged','easy','weak','strong');
-INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('94','nature\'s prophet','intelligence','ranged','medium','medium','very weak');
+INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('94','nature prophet','intelligence','ranged','medium','medium','very weak');
 INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('95','necrophos','intelligence','ranged','easy','strong','medium');
 INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('96','ogre magi','intelligence','melee','easy','very weak','medium');
 INSERT INTO herolist (id,name,attribute,attackrange,complexity,carrypower,supportpower) VALUES ('97','oracle','intelligence','ranged','hard','weak','strong');
