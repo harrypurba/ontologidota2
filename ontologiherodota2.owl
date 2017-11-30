@@ -20,10 +20,16 @@
         <Class IRI="#IntelligenceStrongSupportRanged"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WeakSupportHero"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MediumStrongSupportStrength"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WeakCarryHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryWeakSupportHero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HardHero"/>
@@ -35,16 +41,16 @@
         <Class IRI="#EasyStrongCarryRanged"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Melee"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MediumStrongCarry"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAttribute"/>
+        <Class IRI="#Melee"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Complexity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttribute"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hero"/>
@@ -68,10 +74,13 @@
         <Class IRI="#Ranged"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ThreeRequirements"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RangedHero"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ThreeRequirements"/>
+        <Class IRI="#MediumSupportMediumCarry"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Medium"/>
@@ -92,10 +101,16 @@
         <Class IRI="#MediumHero"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StrongCarryHero"/>
+        <Class IRI="#StrongSupportHero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumSupportHero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrongCarryHero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Agility"/>
@@ -113,16 +128,19 @@
         <Class IRI="#EasyStrongSupport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MeleeHero"/>
+        <Class IRI="#CarryPower"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CarryPower"/>
+        <Class IRI="#MeleeHero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MediumStrongSupport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RangedVeryWeakSupportStrongCarry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligenceStrongSupport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AttackRange"/>
@@ -158,10 +176,10 @@
         <Class IRI="#RangedStrongSupport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TwoRequirements"/>
+        <Class IRI="#VeryWeak"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VeryWeak"/>
+        <Class IRI="#TwoRequirements"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Intelligence"/>
@@ -176,10 +194,10 @@
         <ObjectProperty IRI="#hasAttackRange"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EasyStrongSupportMelee"/>
+        <Class IRI="#EasyMelee"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EasyMelee"/>
+        <Class IRI="#EasyStrongSupportMelee"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#AgilityHero"/>
@@ -196,7 +214,70 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#EasyMelee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyRanged"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyStrength"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyStrongCarry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyStrongCarryAgility"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyStrongCarryRanged"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyStrongSupport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EasyStrongSupportMelee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Easy"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#HardHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Hard"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HardIntelligence"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasComplexity"/>
             <Class IRI="#Hard"/>
@@ -207,6 +288,20 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAttribute"/>
             <Class IRI="#Intelligence"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IntelligenceStrongSupportRanged"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Intelligence"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumAgility"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Medium"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -224,7 +319,35 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MediumStrongCarry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumStrongSupport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumStrongSupportStrength"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplexity"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MeleeHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackRange"/>
+            <Class IRI="#Melee"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeleeStrongCarry"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAttackRange"/>
             <Class IRI="#Melee"/>
@@ -238,7 +361,28 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#RangedStrongSupport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackRange"/>
+            <Class IRI="#Ranged"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RangedVeryWeakSupportStrongCarry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackRange"/>
+            <Class IRI="#Ranged"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#StrengthHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttribute"/>
+            <Class IRI="#Strength"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StrengthMediumSupportMediumCarry"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAttribute"/>
             <Class IRI="#Strength"/>
@@ -350,6 +494,10 @@
         <Class IRI="#OneRequirement"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IntelligenceStrongSupport"/>
+        <Class IRI="#TwoRequirements"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#IntelligenceStrongSupportRanged"/>
         <Class IRI="#ThreeRequirements"/>
     </SubClassOf>
@@ -388,6 +536,14 @@
     <SubClassOf>
         <Class IRI="#MediumStrongSupportStrength"/>
         <Class IRI="#ThreeRequirements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSupportHero"/>
+        <Class IRI="#OneRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSupportMediumCarry"/>
+        <Class IRI="#TwoRequirements"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Melee"/>
@@ -446,6 +602,10 @@
         <Class IRI="#OneRequirement"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StrongSupportHero"/>
+        <Class IRI="#OneRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SupportPower"/>
         <Class IRI="#ValuePartition"/>
     </SubClassOf>
@@ -470,6 +630,10 @@
         <Class IRI="#OneRequirement"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#VeryWeakSupportHero"/>
+        <Class IRI="#OneRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Weak"/>
         <Class IRI="#CarryPower"/>
     </SubClassOf>
@@ -479,6 +643,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WeakCarryHero"/>
+        <Class IRI="#OneRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeakSupportHero"/>
         <Class IRI="#OneRequirement"/>
     </SubClassOf>
     <DisjointClasses>
@@ -535,6 +703,10 @@
         <Class IRI="#TwoRequirements"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#IntelligenceStrongSupport"/>
+        <Class IRI="#MediumSupportMediumCarry"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Medium"/>
         <Class IRI="#Strong"/>
         <Class IRI="#VeryWeak"/>
@@ -545,6 +717,12 @@
         <Class IRI="#StrongCarryHero"/>
         <Class IRI="#VeryWeakCarryHero"/>
         <Class IRI="#WeakCarryHero"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MediumSupportHero"/>
+        <Class IRI="#StrongSupportHero"/>
+        <Class IRI="#VeryWeakSupportHero"/>
+        <Class IRI="#WeakSupportHero"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Melee"/>

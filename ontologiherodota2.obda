@@ -8,16 +8,40 @@ obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 
 [MappingDeclaration] @collection [[
-mappingId	Hero Beratribut Strength
+mappingId	Hero yang sulit untuk dibunuh
 target		:hero{id} a :StrengthHero . 
 source		select id,name from herolist where attribute = 'strength'
 
-mappingId	Hero Carry yang Kuat
+mappingId	Hero yang kuat untuk membunuh
 target		:hero{id} a :StrongCarryHero . 
 source		select id,name from herolist where carrypower = 'strong'
 
-mappingId	Hero yang Mudah digunakan dan Carry yang Kuat
+mappingId	Hero untuk pemula dan mudah untuk membunuh
 target		:hero{id} a :EasyStrongCarry . 
 source		select id,name from herolist where complexity = 'easy' and carrypower ='strong'
+
+mappingId	Hero dalam keadaan santai
+target		:hero{id} a :EasyRanged . 
+source		select id,name from herolist where complexity = 'easy' and attackrange='ranged'
+
+mappingId	Hero yang menantang untuk digunakan
+target		:hero{id} a :HardHero . 
+source		select id,name from herolist where complexity = 'hard'
+
+mappingId	Hero pendukung  untuk kemenangan tim
+target		:hero{id} a :StrongSupportHero . 
+source		select id,name from herolist where supportpower = 'medium' or supportpower = 'strong'
+
+mappingId	Hero dalam keadaan lingkungan yang dingin
+target		:hero{id} a :HardIntelligence . 
+source		select id,name from herolist where (complexity ='medium' or complexity = 'hard') and attribute = 'intelligence'
+
+mappingId	Hero yang kemampuannya seimbang
+target		:hero{id} a :MediumSupportMediumCarry . 
+source		select id,name from herolist where (supportpower = 'medium' or supportpower = 'weak' )and ( carrypower = 'medium'  or carrypower = 'weak' )
+
+mappingId	Hero yang membutuhkan kecepatan tangan
+target		:hero{id} a :IntelligenceStrongSupport . 
+source		select id,name from herolist where attribute = 'intelligence' and supportpower = 'strong'
 ]]
 
